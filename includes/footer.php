@@ -1,0 +1,31 @@
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+<!-- VERIFICAR SE SENHA ESTAR IGUAL -->
+
+<script>
+
+var password = document.getElementById("password")
+, confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+if(password.value != confirm_password.value) {
+confirm_password.setCustomValidity("Senhas diferentes!");
+} else {
+confirm_password.setCustomValidity('');
+}
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+
+<script>
+$('.carousel-indicators .active').removeClass('active');
+</script>
+
+</body>
+</html>

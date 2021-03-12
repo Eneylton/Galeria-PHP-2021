@@ -1,0 +1,12 @@
+{
+    "name":"wdev/crud_php",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Pages\\": "pages/"
+        }
+    },
+    "require": {
+        "dompdf/dompdf": "^1.0"
+    }
+}
